@@ -64,6 +64,8 @@ a {
 .teas {
   display: flex;
   width: 1000px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 
 }
 
@@ -102,4 +104,17 @@ a {
   background: url('../../images/img-locations-background.jpg');
   height: 500px;
   width: 1200px;
+
+}
+
+.location-boxes {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+}
+
+.location {
+  height: 300px;
+  width: 300px;
+  background-color: black;
 }
