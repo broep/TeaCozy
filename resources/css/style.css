@@ -9,6 +9,15 @@ body {
 
 }
 
+h2 {
+  margin: 10px 0px 16px 0px;
+}
+
+h4 {
+  margin: 10px 0px 16px 0px;
+  font-weight: bold;
+}
+
 .header {
   display: flex;
   justify-content: space-between; /*separate logo and the navigation */
@@ -42,6 +51,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center; /* horizontal spacing as direction is column */
+
 }
 
 .mission {
@@ -53,6 +63,7 @@ a {
   align-items: center;
   opacity: 0.9;
   padding-top: 70px;
+  margin-bottom: 70px;
 }
 
 .mission .text {
@@ -69,10 +80,16 @@ a {
 
 }
 
+.tea span {
+  font-weight: bold;
+}
+
 .tea-image {
   height: 200px;
   width: 300px;
   background-size: cover;
+  margin-top: 16px;
+  margin-bottom: 10px;
 }
 
 .tea-image.berry-blitz {
@@ -104,17 +121,36 @@ a {
   background: url('../../images/img-locations-background.jpg');
   height: 500px;
   width: 1200px;
+  padding-top: 50px;
+  margin-top: 60px;
 
 }
 
 .location-boxes {
   display: flex;
   flex-direction: row;
-  align-items: space-between;
+  justify-content: space-around;
+  margin-top: 26px;
 }
 
 .location {
   height: 300px;
   width: 300px;
   background-color: black;
+  flex-direction: column;
+}
+
+.location span {
+  font-weight: bold;
+
+}
+
+.footer.contact {
+  text-align: center;
+  height: 200px;
+}
+
+.footer {
+  text-align: left;
+  margin-left: 20px;
 }
