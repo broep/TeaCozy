@@ -5,19 +5,20 @@ body {
   background-color: black;
   opacity: 0.9;
   margin: 0px;
+  text-align: center;
 
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; /*separate logo and the navigation */
+  align-items: center; /* vertical spacing */
   height: 69px;
   border-bottom: 1px solid seashell;
   background-color: black;
-  z-index: 1;
+  z-index: 1; /* keep the header on top of the rest of the content */
   width: 100%;
-  position: fixed;
+  position: fixed; /* fixed at top of page */
 }
 
 .logo {
@@ -28,7 +29,6 @@ body {
 
 .nav span {
   padding: 20px 10px 20px 10px;
-
 }
 
 a {
@@ -36,9 +36,15 @@ a {
   text-decoration: underline;;
 }
 
+.flex-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* horizontal spacing as direction is column */
+}
 
 .mission {
-
   display: flex;
   background: url('../../images/img-mission-background.jpg');
   height: 700px;
