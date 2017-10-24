@@ -1,0 +1,67 @@
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+
+}
+
+.mission {
+  display: flex;
+  background: url('../../images/img-mission-background.jpg');
+  height: 700px;
+  width: 1200px;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+}
+
+.mission .text {
+  background: black;
+  width: 1200px;
+
+}
+
+.teas {
+  display: flex;
+  width: 1000px;
+
+}
+
+.tea-image {
+  height: 200px;
+  width: 300px;
+  background-size: cover;
+}
+
+.tea-image.berry-blitz {
+  background: url('../../images/img-berryblitz.jpg');
+  background-size: cover;
+}
+
+.tea-image.spiced-rum {
+  background: url('../../images/img-spiced-rum.jpg');
+  background-size: cover;
+}
+
+.tea-image.donut {
+  background: url('../../images/img-donut.jpg');
+  background-size: cover;
+}
+
+.tea-image.myrtle-ave {
+  background: url('../../images/img-myrtle-ave.jpg');
+  background-size: cover;
+}
+
+.tea-image.bedford-bizarre {
+  background: url('../../images/img-bedford-bizarre.jpg');
+  background-size: cover;
+}
+
+.locations {
+  background: url('../../images/img-locations-background.jpg');
+  height: 500px;
+  width: 1200px;
+}
