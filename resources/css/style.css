@@ -1,4 +1,5 @@
-body {
+
+body { /* Default styles for the webpage */
   font-family: Helvetica;
   font-size: 22px;
   color: seashell;
@@ -6,27 +7,26 @@ body {
   opacity: 0.9;
   margin: 0px;
   text-align: center;
-
 }
 
 h2 {
-  margin: 10px 0px 16px 0px;
+  margin: 10px 0px 16px 0px; /*added  margins to get the spacing to look right */
 }
 
 h4 {
-  margin: 10px 0px 16px 0px;
+  margin: 10px 0px 16px 0px; /*added  margins to get the spacing to look right */
   font-weight: bold;
 }
 
 .header {
   display: flex;
-  justify-content: space-between; /*separate logo and the navigation */
+  justify-content: space-between; /*separates logo and the navigation */
   align-items: center; /* vertical spacing */
   height: 69px;
   border-bottom: 1px solid seashell;
   background-color: black;
   z-index: 1; /* keep the header on top of the rest of the content */
-  width: 100%;
+  width: 100%; /* fills 100% of the width */
   position: fixed; /* fixed at top of page */
 }
 
@@ -51,10 +51,9 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center; /* horizontal spacing as direction is column */
-
 }
 
-.mission {
+.mission { /*insde flex-container*/
   display: flex;
   background: url('../../images/img-mission-background.jpg');
   height: 700px;
@@ -66,10 +65,15 @@ a {
   margin-bottom: 70px;
 }
 
-.mission .text {
+.mission .text { /*insde flex-container*/
   background: black;
   width: 1200px;
+}
 
+.tea-menu {
+  /*Didn't utilise the tea-menu as a flex-container with hindsight, probably
+  should have made this the top level container, but instead made teas (below)
+  the flex-container */
 }
 
 .teas {
@@ -77,7 +81,6 @@ a {
   width: 1000px;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 .tea span {
@@ -85,12 +88,15 @@ a {
 }
 
 .tea-image {
+  /* doesn't look exactly the same as in the example, but it does have the
+  measurement of 300px as per the redline */
   height: 200px;
   width: 300px;
   background-size: cover;
   margin: 16px 16px 10px 16px;
 }
 
+/*Gave each tea there own class*/
 .tea-image.berry-blitz {
   background: url('../../images/img-berryblitz.jpg');
   background-size: cover;
@@ -122,28 +128,29 @@ a {
   width: 1200px;
   padding-top: 50px;
   margin-top: 60px;
-
 }
 
-.location-boxes {
+.location-boxes { /*Created a flex container to hold each location block*/
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin-top: 26px;
 }
 
-.location {
+.location { /*All the locations were inside the location-boxes */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 300px;
   width: 300px;
   background-color: black;
-  flex-direction: column;
 }
 
 .location span {
   font-weight: bold;
-
 }
 
+/*Split the footer into two sections */
 .footer.contact {
   text-align: center;
   height: 200px;
