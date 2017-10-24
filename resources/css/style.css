@@ -76,7 +76,7 @@ a {
   display: flex;
   width: 1000px;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 
 }
 
@@ -88,8 +88,7 @@ a {
   height: 200px;
   width: 300px;
   background-size: cover;
-  margin-top: 16px;
-  margin-bottom: 10px;
+  margin: 16px 16px 10px 16px;
 }
 
 .tea-image.berry-blitz {
